@@ -7,10 +7,11 @@ import { useRouter } from "next/router";
 import SessionContextProvider from "@/contexts/SessionContext";
 
 const client = new ApolloClient({
-  uri: "https://render-back-bw0c.onrender.com/graphql",
-  
-  // InMemoryCache para guardar los datos en cache. cuando se hagan cambios apollo no tenga que pedir los datos acada momento.
+  uri: "https://render-back-eugm.onrender.com/graphql",
   cache: new InMemoryCache(),
+  headers: {
+    "Content-Type": "application/json", // Asegúrate de incluir esto
+  },
 });
 
 export default function App({ Component, pageProps }) {
