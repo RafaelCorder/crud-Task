@@ -12,7 +12,8 @@ const client = new ApolloClient({
   headers: {
     "Content-Type": "application/json", // Asegúrate de incluir esto
   },
-});
+})
+
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
