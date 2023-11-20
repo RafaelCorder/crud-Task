@@ -14,6 +14,8 @@ const client = new ApolloClient({
   },
 })
 
+// prueba 
+
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
